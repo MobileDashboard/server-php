@@ -17,16 +17,28 @@ namespace MobileDashboard\Api;
 class Api
 {
     /**
+     * @var MobileDashboard\Api\Configuration $configuration
+     */
+    protected $configuration;
+
+    /**
      * Constructor
      *
+     * @param MobileDashboard\Api\Configuration $configuration
      * @return void
      */
-    public function __construct()
+    public function __construct(Configuration $configuration)
     {
-        // ...
+        $this->configuration = $configuration;
     } // end __construct()
 
-    // ...
+    /**
+     * @return MobileDashboard\Api\Configuration
+     */
+    public function getConfiguration()
+    {
+        return $this->configuration;
+    } // end getConfiguration()
 
 } // End of Api
 
