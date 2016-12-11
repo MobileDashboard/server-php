@@ -17,3 +17,6 @@ temp/
 # Generated MarkDown files
 README.html
 TODO.html
+
+# Komodo Edit project file
+*.komodoproject
