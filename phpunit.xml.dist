@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true"
+         bootstrap="test/bootstrap.php">
+    <testsuites>
+        <testsuite name="MobileDashboard API Test Suite">
+            <directory>test/src/MobileDashboard/Api/Item</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
