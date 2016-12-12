@@ -13,6 +13,7 @@ namespace MobileDashboard\Api\Item;
  * Class representing single dashboard.
  *
  * @author Ondřej Doněk, <ondrejd@gmail.com>
+ * @todo Add "link" property (and getter/setter).
  */
 class Dashboard
 {
@@ -23,7 +24,7 @@ class Dashboard
     protected $id;
     
     /**
-     * Unique numeric identifier of the dashboard's parent.
+     * Numeric identifier of the dashboard's parent.
      * @var integer $id
      */
     protected $parentId;
