@@ -33,12 +33,63 @@ class Api
     } // end __construct()
 
     /**
-     * @return MobileDashboard\Api\Configuration
+     * Implementation of REST API method "info".
+     * 
+     * @link https://github.com/MobileDashboard/server-php#method-info
+     * @param Request $request (Optional.)
+     * @return void
      */
-    public function getConfiguration()
+    public function info(Request $request = null)
     {
-        return $this->configuration;
-    } // end getConfiguration()
+        // ...
+    }
 
+    /**
+     * Implementation of REST API method "messages".
+     * 
+     * @link https://github.com/MobileDashboard/server-php#method-messages
+     * @param Request $request (Optional.)
+     * @return void
+     */
+    public function messages(Request $request = null)
+    {
+        // ...
+    }
+
+    /**
+     * Implementation of REST API method "add".
+     * 
+     * @link https://github.com/MobileDashboard/server-php#method-add
+     * @param Request $request (Optional.)
+     * @return void
+     */
+    public function add(Request $request = null)
+    {
+        // ...
+    }
+
+    /**
+     * Implementation of REST API method "update".
+     * 
+     * @link https://github.com/MobileDashboard/server-php#method-update
+     * @param Request $request (Optional.)
+     * @return void
+     */
+    public function update(Request $request = null)
+    {
+        // ...
+    }
+
+    /**
+     * Implementation of REST API method "remove".
+     * 
+     * @link https://github.com/MobileDashboard/server-php#method-remove
+     * @param Request $request (Optional.)
+     * @return void
+     */
+    public function remove(Request $request = null)
+    {
+        // ...
+    }
 } // End of Api
 

@@ -64,6 +64,5 @@ class Configuration
     {
         return $this->dashboardHash;
     } // end getDashboardHash()
-
 } // End of Configuration
 
