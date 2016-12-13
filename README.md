@@ -122,8 +122,8 @@ Tělo dotazu:
         {
             "title": "Nová zpráva",
             "content": "Obsah nové zprávy...",
-            "created": "",
-            "expired": ""
+            "created": "2016-12-13 20:24:00",
+            "expired": "2016-12-24 23:59:59"
         }
     ]
 }
@@ -135,7 +135,7 @@ Odpověď:
 }
 ```
 
-Při přidávání nových zpráv můžete použít i další atributy, které jsou nepovinné: `link` a `priority`. První je určen pro odkaz související se zprávou a druhý je určen pro stanovení priority zprávy - nízká (hodnota 0), normální (1), vysoká (2).
+Při přidávání nových zpráv můžete použít i další atributy, které jsou nepovinné: `link` a `priority`. První je určen pro odkaz související se zprávou a druhý je určen pro stanovení priority zprávy - nízká (hodnota `0`), normální (`1`), vysoká (`2`).
 Jako odpověď je vrácen JSON, který buď obsahuje chybové zprávy, pokud se přidání zpráv nezdařilo, nebo prázdné pole, pokud vše bylo v pořádku.
 
 #### Upravit zprávu
