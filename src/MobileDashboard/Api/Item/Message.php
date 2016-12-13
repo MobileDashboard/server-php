@@ -113,7 +113,8 @@ class Message
     /**
      * @return integer ID of the message.
      */
-    public function getId() {
+    public function getId()
+    {
         return $this->id;
     } // end getId()
 
@@ -122,14 +123,16 @@ class Message
      * @param integer $id
      * @return void
      */
-    public function setId($id) {
+    public function setId($id)
+    {
         $this->id = (int) $id;
     } // end setId($id)
 
     /**
      * @return integer ID of the dashboard to which message belongs.
      */
-    public function getDashboardId() {
+    public function getDashboardId()
+    {
         return $this->dashboardId;
     } // end getDashboardId()
 
@@ -138,14 +141,16 @@ class Message
      * @param integer $dashboardId
      * @return void
      */
-    public function setDashboardId($dashboardId) {
+    public function setDashboardId($dashboardId)
+    {
         $this->dashboardId = (int) $dashboardId;
     } // end setDashboardId($dashboardId)
 
     /**
      * @return string Title of the message.
      */
-    public function getTitle() {
+    public function getTitle()
+    {
         return $this->title;
     } // end getTitle()
 
@@ -154,7 +159,8 @@ class Message
      * @param string $title
      * @return void 
      */
-    public function setTitle($title) {
+    public function setTitle($title)
+    {
         $this->title = $title;
     } // end setTitle($title)
 
@@ -170,14 +176,16 @@ class Message
      * @param string $content
      * @return void 
      */
-    public function setContent($content) {
+    public function setContent($content)
+    {
         $this->content = $content;
     } // end setContent($content)
 
     /**
      * @return string Author of the message.
      */
-    public function getAuthor() {
+    public function getAuthor()
+    {
         return $this->author;
     } // end getAuthor()
 
@@ -193,7 +201,8 @@ class Message
     /**
      * @return string Link attached to the message.
      */
-    public function getLink() {
+    public function getLink()
+    {
         return $this->link;
     } // end getLink()
 
@@ -202,7 +211,8 @@ class Message
      * @param string $link
      * @return void 
      */
-    public function setLink($link) {
+    public function setLink($link)
+    {
         $this->link = $link;
     } // end setLink($link)
 
@@ -218,14 +228,16 @@ class Message
      * @param string $created
      * @return void
      */
-    public function setCreated($created) {
+    public function setCreated($created)
+    {
         $this->created = $created;
     } // end setCreated($created)
 
     /**
      * @return string Datetime when will the message expire.
      */
-    public function getExpired() {
+    public function getExpired()
+    {
         return $this->expired;
     } // end getExpired()
 
@@ -234,7 +246,8 @@ class Message
      * @param string $expired
      * @return void
      */
-    public function setExpired($expired) {
+    public function setExpired($expired)
+    {
         $this->expired = $expired;
     } // end setExpired($expired)
 
@@ -250,14 +263,16 @@ class Message
      * @param string $deleted
      * @return void
      */
-    public function setDeleted($deleted) {
+    public function setDeleted($deleted)
+    {
         $this->deleted = $deleted;
     } // end setDeleted($deleted)
 
     /**
      * @return string Datetime when was the message updated.
      */
-    public function getUpdated() {
+    public function getUpdated()
+    {
         return $this->updated;
     } // end getUpdated()
 
@@ -266,14 +281,16 @@ class Message
      * @param string $updated
      * @return void
      */
-    public function setUpdated($updated) {
+    public function setUpdated($updated)
+    {
         $this->updated = $updated;
     } // end setUpdated($deleted)
     
     /**
      * @return string
      */
-    public function __toString() {
+    public function __toString()
+    {
         return $this->title;
     } // end __toString()
 } // End of Message

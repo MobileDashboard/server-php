@@ -14,6 +14,7 @@ namespace MobileDashboard\Api\Item;
  *
  * @author Ondřej Doněk, <ondrejd@gmail.com>
  * @todo Add "link" property (and getter/setter).
+ * @todo Add "contact" property (and getter/setter).
  */
 class Dashboard
 {
@@ -25,7 +26,7 @@ class Dashboard
     
     /**
      * Numeric identifier of the dashboard's parent.
-     * @var integer $id
+     * @var integer $parentId
      */
     protected $parentId;
     
