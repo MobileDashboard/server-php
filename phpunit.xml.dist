@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit colors="true"
-         bootstrap="test/bootstrap.php">
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="test/bootstrap.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
     <testsuites>
         <testsuite name="MobileDashboard API Test Suite">
+            <directory suffix="Test.php">./test/src</directory>
             <directory>test/src/MobileDashboard/Api/Item</directory>
         </testsuite>
     </testsuites>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="QUEUE_DRIVER" value="sync"/>
+    </php>
 </phpunit>

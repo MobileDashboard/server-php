@@ -1,9 +1,23 @@
 {
-    "name": "mobiledashboard/server-php",
-    "autoload": {
-        "classmap": ["src/MobileDashboard"]
-    },
-    "require-dev": {
-        "phpunit/phpunit": "5.7.*"
-    }
+	"name": "MobileDashboard/server-php",
+	"description": "Sample PHP implementation of MobileDashboard server.",
+	"homepage": "https://github.com/MobileDashboard",
+	"version": "1.0.0",
+	"type": "project",
+	"license": ["MIT", "BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"support": {
+		"issues": "https://github.com/MobileDashboard/server-php/issues",
+		"wiki": "https://github.com/MobileDashboard/server-php/wiki",
+        "source": "https://github.com/MobileDashboard/server-php"
+	},
+	"autoload": {
+		"classmap": ["src/MobileDashboard"]
+	},
+	"require": {
+		"php": ">= 5.6"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "5.7.*"
+	},
+	"minimum-stability": "stable"
 }

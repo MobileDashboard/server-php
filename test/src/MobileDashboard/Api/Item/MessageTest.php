@@ -1,9 +1,17 @@
 <?php
-use PHPUnit\Framework\TestCase;
 use MobileDashboard\Api\Item\Message;
 
-class MessageTest extends TestCase
+class MessageTest extends PHPUnit_Framework_TestCase
 {
+    /**
+     * @return Message
+     */
+    protected function getMessage() {
+        return  new Message(14, 7, 'Test message', 'Content of the test message', 
+                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
+                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+    }
+
     public function testConstruct()
     {
         $a = new Message();
@@ -22,9 +30,7 @@ class MessageTest extends TestCase
     
     public function testGetId()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals(14, $a->getId());
     }
     
@@ -37,9 +43,7 @@ class MessageTest extends TestCase
     
     public function testGetDashoardtId()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals(7, $a->getDashboardId());
     }
     
@@ -52,9 +56,7 @@ class MessageTest extends TestCase
     
     public function testGetTitle()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals('Test message', $a->getTitle());
     }
     
@@ -67,9 +69,7 @@ class MessageTest extends TestCase
     
     public function testGetContent()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals('Content of the test message', $a->getContent());
     }
     
@@ -82,9 +82,7 @@ class MessageTest extends TestCase
     
     public function testGetAuthor()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals('ondrejd', $a->getAuthor());
     }
     
@@ -97,9 +95,7 @@ class MessageTest extends TestCase
     
     public function testGetLink()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals('http://www.test.cz/', $a->getLink());
     }
     
@@ -112,9 +108,7 @@ class MessageTest extends TestCase
     
     public function testGetCreated()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals('2016-12-09 19:45:00', $a->getCreated());
     }
     
@@ -127,9 +121,7 @@ class MessageTest extends TestCase
     
     public function testGetExpired()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals('2016-12-24 12:00:00', $a->getExpired());
     }
     
@@ -142,9 +134,7 @@ class MessageTest extends TestCase
     
     public function testGetDeleted()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals('2016-12-11 20:05:00', $a->getDeleted());
     }
     
@@ -157,9 +147,7 @@ class MessageTest extends TestCase
     
     public function testGetUpdated()
     {
-        $a = new Message(14, 7, 'Test message', 'Content of the test message', 
-                'ondrejd', 'http://www.test.cz/', '2016-12-09 19:45:00', 
-                '2016-12-24 12:00:00', '2016-12-11 20:05:00', '2016-12-11 20:05:00');
+        $a = $this->getMessage();
         $this->assertEquals('2016-12-11 20:05:00', $a->getUpdated());
     }
     

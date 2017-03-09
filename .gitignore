@@ -1,5 +1,6 @@
 # Composer files
 composer.phar
+composer.lock
 vendor/
 
 # Local configs
@@ -18,5 +19,8 @@ temp/
 README.html
 TODO.html
 
-# Komodo Edit project file
-*.komodoproject
+# NetBeans IDE
+nbproject/private
+
+# Backup files
+*.backup

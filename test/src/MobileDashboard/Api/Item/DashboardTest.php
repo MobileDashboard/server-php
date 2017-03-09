@@ -1,8 +1,7 @@
 <?php
-use PHPUnit\Framework\TestCase;
 use MobileDashboard\Api\Item\Dashboard;
 
-class DashboardTest extends TestCase
+class DashboardTest extends PHPUnit_Framework_TestCase
 {
     public function testConstruct()
     {

@@ -1,8 +1,7 @@
 <?php
-use PHPUnit\Framework\TestCase;
 use MobileDashboard\Api\Item\Error;
 
-class ErrorTest extends TestCase
+class ErrorTest extends PHPUnit_Framework_TestCase
 {
     public function testConstruct()
     {
